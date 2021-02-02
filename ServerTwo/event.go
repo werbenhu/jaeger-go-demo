@@ -25,7 +25,7 @@ const (
 func eventHandler(message string) error {
 	fmt.Printf("event msg:%s\n", message)
 
-	jaeger := initJaeger("two1")
+	jaeger := initJaeger("server-two")
 	defer jaeger.Close()
 
 	// 读取消息中的trace-id

@@ -34,7 +34,7 @@ func initJaeger(serviceName string) io.Closer {
 		},
 		Reporter: &config.ReporterConfig{
 			LogSpans: true,
-			LocalAgentHostPort:"218.91.230.203:6831",
+			LocalAgentHostPort:"218.91.230.20:6831",
 		},
 	}
 	closer, err := cfg.InitGlobalTracer(serviceName, config.Logger(jaeger.StdLogger))
